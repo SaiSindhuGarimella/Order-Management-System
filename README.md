@@ -154,4 +154,21 @@ VITE_API_URL=http://localhost:8000
 ### Architecture 
 <img width="283" height="810" alt="image" src="https://github.com/user-attachments/assets/a0dc2410-058d-41b9-8bc6-83f3fff014bb" />
 
+### UI Screenshots 
+
+- **Test Case 1- Create Order**
+- Steps:
+1.	Click “Create Order”
+2.	Enter item name and quantity
+3.	Click Submit
+Expected Result:
+Order appears in Orders List with Status = Processing
+Screenshot: Before Submit — form filled out
+<img width="1030" height="484" alt="image" src="https://github.com/user-attachments/assets/16ec0792-63e2-4be7-b19b-48e22d0cb9ee" />
+After Submit — order visible in Orders List with processing status
+<img width="940" height="326" alt="image" src="https://github.com/user-attachments/assets/3f603fc5-6a61-4f36-a3dd-3c8c3baeb913" />
+
+ 
+
+
 
