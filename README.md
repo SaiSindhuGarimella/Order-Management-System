@@ -234,6 +234,16 @@ This ensures that the most recent stable build is always live, reducing manual e
 By integrating these workflows, the GitHub Actions pipeline provides an efficient, fully automated process for building, testing, and deploying the project.
 This not only increases development speed but also guarantees consistency, reliability, and continuous delivery of new features without downtime or human error.
 
+### Docker Image Deployment to Docker Hub
+•	As part of the DevOps implementation, all project components frontend, backend, worker, and Redis were containerized using Docker.
+•	Each service was built as an individual Docker image and then pushed to Docker Hub under public repository for easy access and deployment.
+Screenshot:
+<img width="940" height="339" alt="image" src="https://github.com/user-attachments/assets/604b38ac-8170-4748-ad28-29c0f197c4b5" />
+
+By maintaining pre-built, versioned Docker images in a central registry, the project achieves reliable, repeatable, and environment-independent deployments,     aligning with DevOps best practices for containerized applications.
+
+
+
 
 
 
