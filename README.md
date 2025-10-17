@@ -158,6 +158,7 @@ VITE_API_URL=http://localhost:8000
 
 - **Test Case 1- Create Order**
 - Steps:
+- 
 1.	Click “Create Order”
 2.	Enter item name and quantity
 3.	Click Submit
@@ -170,19 +171,22 @@ After Submit — order visible in Orders List with processing status
 
 - **Test Case 2 - Auto Refresh & Status Update** 
 -Steps:
+
 1.	Wait ~3 seconds after order creation
 Expected Result: Status changes from Processing → Completed automatically
 <img width="940" height="458" alt="image" src="https://github.com/user-attachments/assets/afb237f2-3810-4d6b-a396-9f478382847c" />
 
 - **Test Case 3 - Filter by Status** 
-- Steps: 
+- Steps:
+
 1.Click “Filter by Status” → select “Completed”
  Expected Result: Only Completed orders shown
 <img width="263" height="231" alt="image" src="https://github.com/user-attachments/assets/f4c5b556-7f8a-4b65-b76f-654f33e2b794" />
 <img width="1006" height="273" alt="image" src="https://github.com/user-attachments/assets/820f1063-5fdf-4a36-8869-d5b5a0a7f5e5" />
 
 - **Test Case 4: Failed Order Example**
-- Steps: 
+- Steps:
+  
 1.	Create a test order that triggers failure 
 Expected Result: Status = FAILED (red badge)
 Screenshot: Orders List with one red badge labelled “FAILED”.
@@ -190,6 +194,7 @@ Screenshot: Orders List with one red badge labelled “FAILED”.
 
 -**Test Case 5: Display Dashboard Screen**
 -Steps:
+
 1. Navigate to the Dashboard tab
 2.	Observe the Dashboard showing Total Orders, Completed, Pending, and Failed counts along with the chart view and check with the orders list.
 Expected Result:
@@ -201,6 +206,7 @@ Screenshot: Dashboard overview with order summary and chart.
 ### MongoDB Test Cases – Data Reflection
 -**Test Case1: Verify Order Creation in Database**
 Steps:
+
 1.	Create a new order from the UI.
 2.	Open MongoDB and check the orders collection.
 Expected Result:
@@ -215,18 +221,22 @@ Data Reflection in Mongo DB:
 In this project, GitHub Actions were implemented to automate the entire Continuous Integration and Continuous Deployment (CI/CD) process, ensuring that the system remains stable, tested, and up to date with every code change.
 All automation workflows are defined inside the .github/workflows directory, which contains YAML configuration files that specify how the application is built, tested, and deployed automatically whenever a new commit or pull request is made.
 The following workflows are used in this project:
+
 -**ci.yml — Continuous Integration:**
 This workflow is triggered whenever new code is pushed to the repository.
 It automatically sets up both Python (FastAPI backend) and Node.js (React frontend) environments, installs all dependencies, builds the application, and validates that there are no issues.
 This ensures that every update passes through a verified build process before merging.
+
 -**test.yml — Automated Testing:**
 This workflow executes all test cases after the CI stage completes successfully.
 It verifies backend API endpoints, frontend UI functionality, and the overall stability of the system.
 Running tests automatically helps detect bugs or regressions early, maintaining a consistent and reliable codebase.
+
 -**deploy.yml — Continuous Deployment:**
 Once the build and tests pass, this workflow handles the deployment process.
 It packages and deploys the latest version of the frontend and backend to the hosting environment.
 This ensures that the most recent stable build is always live, reducing manual effort and enabling faster, more reliable updates.
+
 By integrating these workflows, the GitHub Actions pipeline provides an efficient, fully automated process for building, testing, and deploying the project.
 This not only increases development speed but also guarantees consistency, reliability, and continuous delivery of new features without downtime or human error.
 
