@@ -150,3 +150,8 @@ VITE_API_URL=http://localhost:8000
 - **Dashboard**: Real-time statistics overview
 - **Create Order**: Simple, validated form
 - **Orders List**: Live status tracking with filters
+
+### Architecture 
+<img width="283" height="810" alt="image" src="https://github.com/user-attachments/assets/a0dc2410-058d-41b9-8bc6-83f3fff014bb" />
+
+
