@@ -158,7 +158,6 @@ VITE_API_URL=http://localhost:8000
 
 - **Test Case 1- Create Order**
 - Steps:
-- 
 1.	Click “Create Order”
 2.	Enter item name and quantity
 3.	Click Submit
@@ -171,22 +170,19 @@ After Submit — order visible in Orders List with processing status
 
 - **Test Case 2 - Auto Refresh & Status Update** 
 -Steps:
-
 1.	Wait ~3 seconds after order creation
 Expected Result: Status changes from Processing → Completed automatically
 <img width="940" height="458" alt="image" src="https://github.com/user-attachments/assets/afb237f2-3810-4d6b-a396-9f478382847c" />
 
 - **Test Case 3 - Filter by Status** 
 - Steps:
-
 1.Click “Filter by Status” → select “Completed”
  Expected Result: Only Completed orders shown
 <img width="263" height="231" alt="image" src="https://github.com/user-attachments/assets/f4c5b556-7f8a-4b65-b76f-654f33e2b794" />
 <img width="1006" height="273" alt="image" src="https://github.com/user-attachments/assets/820f1063-5fdf-4a36-8869-d5b5a0a7f5e5" />
 
 - **Test Case 4: Failed Order Example**
-- Steps:
-  
+- Steps:  
 1.	Create a test order that triggers failure 
 Expected Result: Status = FAILED (red badge)
 Screenshot: Orders List with one red badge labelled “FAILED”.
@@ -194,7 +190,6 @@ Screenshot: Orders List with one red badge labelled “FAILED”.
 
 -**Test Case 5: Display Dashboard Screen**
 -Steps:
-
 1. Navigate to the Dashboard tab
 2.	Observe the Dashboard showing Total Orders, Completed, Pending, and Failed counts along with the chart view and check with the orders list.
 Expected Result:
@@ -206,7 +201,6 @@ Screenshot: Dashboard overview with order summary and chart.
 ### MongoDB Test Cases – Data Reflection
 -**Test Case1: Verify Order Creation in Database**
 Steps:
-
 1.	Create a new order from the UI.
 2.	Open MongoDB and check the orders collection.
 Expected Result:
