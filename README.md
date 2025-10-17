@@ -168,6 +168,33 @@ Screenshot: Before Submit — form filled out
 After Submit — order visible in Orders List with processing status
 <img width="940" height="326" alt="image" src="https://github.com/user-attachments/assets/3f603fc5-6a61-4f36-a3dd-3c8c3baeb913" />
 
+- **Test Case 2 - Auto Refresh & Status Update** 
+-Steps:
+1.	Wait ~3 seconds after order creation
+Expected Result: Status changes from Processing → Completed automatically
+<img width="940" height="458" alt="image" src="https://github.com/user-attachments/assets/afb237f2-3810-4d6b-a396-9f478382847c" />
+
+- **Test Case 3 - Filter by Status** 
+- Steps: 
+1.Click “Filter by Status” → select “Completed”
+ Expected Result: Only Completed orders shown
+<img width="263" height="231" alt="image" src="https://github.com/user-attachments/assets/f4c5b556-7f8a-4b65-b76f-654f33e2b794" />
+<img width="1006" height="273" alt="image" src="https://github.com/user-attachments/assets/820f1063-5fdf-4a36-8869-d5b5a0a7f5e5" />
+
+- **Test Case 4: Failed Order Example**
+- Steps: 
+1.	Create a test order that triggers failure 
+Expected Result: Status = FAILED (red badge)
+Screenshot: Orders List with one red badge labelled “FAILED”.
+<img width="993" height="283" alt="image" src="https://github.com/user-attachments/assets/c21e0ced-ad70-49c5-bb6f-04cdd7cf6ad2" />
+
+
+
+
+
+
+  
+
  
 
 
