@@ -188,6 +188,53 @@ Expected Result: Status = FAILED (red badge)
 Screenshot: Orders List with one red badge labelled “FAILED”.
 <img width="993" height="283" alt="image" src="https://github.com/user-attachments/assets/c21e0ced-ad70-49c5-bb6f-04cdd7cf6ad2" />
 
+-**Test Case 5: Display Dashboard Screen**
+-Steps:
+1. Navigate to the Dashboard tab
+2.	Observe the Dashboard showing Total Orders, Completed, Pending, and Failed counts along with the chart view and check with the orders list.
+Expected Result:
+Dashboard page loads successfully, displaying all status cards and chart visualization clearly and matching with the orders list.
+Total Orders:15   Completed: 14    Failed: 1   Pending: 0   Processing: 0
+Screenshot: Dashboard overview with order summary and chart.
+<img width="1015" height="315" alt="image" src="https://github.com/user-attachments/assets/f9863ca3-175a-404a-81f2-78ad7948a0fa" />
+
+### MongoDB Test Cases – Data Reflection
+-**Test Case1: Verify Order Creation in Database**
+Steps:
+1.	Create a new order from the UI.
+2.	Open MongoDB and check the orders collection.
+Expected Result:
+A new order record appears with correct item name, quantity, and status as Completed.
+-**Screenshot**: 
+New Orders from the UI
+<img width="940" height="139" alt="image" src="https://github.com/user-attachments/assets/3afa5a13-7934-4390-9359-9ff6b39f0ad6" />
+Data Reflection in Mongo DB:
+<img width="940" height="576" alt="image" src="https://github.com/user-attachments/assets/cb9258d1-f8c0-4aee-9a07-8b8da1f37e4b" />
+
+### GitHub Actions – Automated CI/CD Workflows
+In this project, GitHub Actions were implemented to automate the entire Continuous Integration and Continuous Deployment (CI/CD) process, ensuring that the system remains stable, tested, and up to date with every code change.
+All automation workflows are defined inside the .github/workflows directory, which contains YAML configuration files that specify how the application is built, tested, and deployed automatically whenever a new commit or pull request is made.
+The following workflows are used in this project:
+-**ci.yml — Continuous Integration:**
+This workflow is triggered whenever new code is pushed to the repository.
+It automatically sets up both Python (FastAPI backend) and Node.js (React frontend) environments, installs all dependencies, builds the application, and validates that there are no issues.
+This ensures that every update passes through a verified build process before merging.
+-**test.yml — Automated Testing:**
+This workflow executes all test cases after the CI stage completes successfully.
+It verifies backend API endpoints, frontend UI functionality, and the overall stability of the system.
+Running tests automatically helps detect bugs or regressions early, maintaining a consistent and reliable codebase.
+-**deploy.yml — Continuous Deployment:**
+Once the build and tests pass, this workflow handles the deployment process.
+It packages and deploys the latest version of the frontend and backend to the hosting environment.
+This ensures that the most recent stable build is always live, reducing manual effort and enabling faster, more reliable updates.
+By integrating these workflows, the GitHub Actions pipeline provides an efficient, fully automated process for building, testing, and deploying the project.
+This not only increases development speed but also guarantees consistency, reliability, and continuous delivery of new features without downtime or human error.
+
+
+
+
+
+   
 
 
 
